@@ -50,6 +50,7 @@ To build predictive models to identify customers at high risk of churn so that t
         - have lower amount local incoming and outgoing usage
         - have done late recharge compared to previous months
         - have lower incoming call (of any type) usage
+          
      - Telecom company needs to pay attention to the factors mentioned above and should come up with better offer for customers
 
 
@@ -65,6 +66,7 @@ To build predictive models to identify customers at high risk of churn so that t
         - have lower amount local incoming and outgoing usage
         - have done late recharge compared to previous months
         - have lower incoming call (of any type) usage
+        
      - Telecom company needs to pay attention to the factors mentioned above and should come up with better offer for customers
 
   
