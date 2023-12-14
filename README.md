@@ -16,38 +16,41 @@ To build predictive models to identify customers at high risk of churn so that t
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
-- The main objective of this analysis is to create a linear regression model to understand which independent variables/attributes (predictor) are mostly impacting outcome variable "cnt" (count of total rental bikes)
+- The main objective of this analysis is to create a ML model that identifies customers at high risk of churn so that the company can take action steps such as providing special plans, discounts on recharge etc. and to identify important variables that are strong predictors of churn (variable name churn_probablity). 
 - Steps followed for this analysis: 
-  1. Reading and cleaning the Data
-     - Input dataset used for this analysis had 730 rows and 16 columns
+  1. Reading and understanding of the Data
+     - Input dataset used for this analysis had 69999 rows and 172 columns
+  2. Missing value / data cleaning treatment
      - The data cleaning step included
-        1. Rounding up digit after decimal  by 3 
-        2. Converting integer values to corresponding categorical values 
-        3. Checking columns have same values or not
+        1. Removing columns having missing value greater than 70% 
+        2. Fixing missing value issues by '0'
+        3. Removing columns having same value as those do not have any variation
         4. Remove columns which are not required for analysis
-  2. Visualising the data - 
-     -  Created different plots to understand the relationship (specifically to understand linear relationship) between different sets of variables 
+  3. Feature Engineering
+     - Creating new variables based on existing variables
+  4. Visualising the data - univariate, bivariate, correlation analysis
+     -  Created different plots to understand the relationship between different sets of variables
+  5. Outlier treatment
+     -  Caping high column values based on threshold
   3. Data preparation for Modeling
-        1. Converting categorical variables to dummy variables - so that they become suitable for model building 
-        2. Splitting data into Training and Test sets at 70% (for training data) and 30% (for evaluating data) ratio respectively
-        3. Rescaling features using Min-Max scaling technique so that variables can have comparable scale 
-  4. Building a linear model
-      - Linear model was build using statsmodels 
-      - Started with 10 variables using sklearn RFE technique and dropped variables having high (>5) Variance Inflation Factor (VIF) and high p (>0.05) one by one after checking p and VIF everytime.
-      - Dropped variables having coefficient of very low magnitude one by one after checking p, VIF and Adjusted R2 once variables having high VIF and high p value were cleaned up
-      - Final model had R2 as 81% and Durbin-Watson as 1.999
-  5. Resudual analysis of the training data
-      - Applied model validated on training dataset
-      - Residual analysis done to validate residuals are normally distributed with mean at 0
-      - Checked y_predict vs y based on the training database to validate linear distribution (homoscedasticity) between the two 
+        1. Splitting data into Training and Test sets at 70% (for training data) and 30% (for evaluating data) ratio respectively
+        3. Rescaling features using Standard Scaler technique so that variables can have comparable scale 
+  4. Building Different Models (Logistic regression with PCA,Random Forest,XG Boost )
+      - Tried different models and selected logistic regression as final model based on sensitivity / recall criteria
+  5. Feature selection
+      - Selected important features based on coeeficient values 
   6. Making prediction using final model
       - Final model applied on test dataset
-  7. Model evaluation
-      - Model is evaluated based on test data using sklearn r2_score which gave R2 value which is within 5% of R2 generated based on training dataset
-      - Checked y_predict vs y based on the test database to validate linear distribution (homoscedasticity) between the two
-      - Did residual analysis on test dataset to validate residuals are normally distributed with mean at 0
+  7. Final Model Building
+      - Final logistic regression model is created based on selected features. This gives 0.0960 as Kaggel score 
   8. Summary
-      - Created final linear regression equation and understood the impact of the drivers on bike sharing revenue 
+      - The customers who satisfies one or more criteria mentioned below, have higher probability of churn:
+        - have done lower amount of recharge compared to previous months
+        - have used more roaming outgoing compared to previous month
+        - have lower amount local incoming and outgoing usage
+        - have done late recharge compared to previous months
+        - have lower incoming call (of any type) usage
+    Telecom company needs to pay attention to the factors mentioned above and should come up with better offer for customers
 
 
    
