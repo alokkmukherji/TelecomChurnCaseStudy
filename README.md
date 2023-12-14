@@ -1,16 +1,12 @@
-# House Price Prediction Case Study 
+# Telecom Churn Prediction Case Study 
 
-A US-based housing company named "Surprise Housing" uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. It has decided to enter the Australian market and so it is looking at prospective properties to buy to enter the market. For this purpose, the company wants to know
+Problem Statement
+In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
 
-Which factors are significant in predicting the price of a house
-How well those factors describe the price of a house.
-Our goal:
-To create a regression model for the target variable named "SalePrice" based on collected data set and using regularisation technique in order to predict the actual value of the prospective properties accurately so that it can be decided whether it will be good to invest in those or not.
+For many incumbent operators, retaining high profitable customers is the number one business goal. To reduce customer churn, telecom companies need to predict which customers are at high risk of churn. In this project, you will analyze customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn.
 
-Business Objective:
-
-To understand how exactly the SalePrice vary with the features so that this knowledge can be used to concentrate on areas that will yield high returns
-To understand the pricing dynamics of a new market.
+Goal
+To build predictive models to identify customers at high risk of churn so that the company can take action steps such as providing special plans, discounts on recharge etc. To identify important variables that are strong predictors of churn. These variables may also indicate why customers choose to switch to other networks. To recommend strategies to manage customer churn based on your observations.
 
 
 ## Table of Contents
