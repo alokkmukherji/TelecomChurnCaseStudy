@@ -50,7 +50,7 @@ To build predictive models to identify customers at high risk of churn so that t
         - have lower amount local incoming and outgoing usage
         - have done late recharge compared to previous months
         - have lower incoming call (of any type) usage
-    Telecom company needs to pay attention to the factors mentioned above and should come up with better offer for customers
+     - Telecom company needs to pay attention to the factors mentioned above and should come up with better offer for customers
 
 
    
@@ -59,12 +59,15 @@ To build predictive models to identify customers at high risk of churn so that t
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
- -  Increase in temp causes an increase in bike rent when all other predictors are not changing
- -  Bike rent increases with increase in year when all other predictors are not changing
--   Increase in Light Snow/Light Rain + Thunderstorm + Scattered clouds/Light Rain + Scattered clouds causes a decrease in bike rent when all other predictors are not changing
--   Increase in windspeed causes a decrease in bike rent when all other predictors not not changing
--   During spring, there is a decrease in bike rent when all other predictor is not changing
--   During Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, there is a decrease in bike rent when all other predictor is not changing
+      - The customers who satisfies one or more criteria mentioned below, have higher probability of churn:
+        - have done lower amount of recharge compared to previous months
+        - have used more roaming outgoing compared to previous month
+        - have lower amount local incoming and outgoing usage
+        - have done late recharge compared to previous months
+        - have lower incoming call (of any type) usage
+     - Telecom company needs to pay attention to the factors mentioned above and should come up with better offer for customers
+
+  
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -73,8 +76,7 @@ To build predictive models to identify customers at high risk of churn so that t
 - Python 3.0 (Python lib used - numpy, pandas, seaborn, matplotlib, sklearn, statsmodels)
 - Jupyter notebook
 - Exploratory Data Anlysis (EDA) Concept
-- Linear regression (single and multiple) Concept
-- Inferential Statistics Concept
+- Logistic regression, Random Forest, XGBoost, PCA Concept
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
