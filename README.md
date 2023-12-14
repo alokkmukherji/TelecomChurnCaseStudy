@@ -39,10 +39,8 @@ To build predictive models to identify customers at high risk of churn so that t
       - Tried different models and selected logistic regression as final model based on sensitivity / recall criteria
   5. Feature selection
       - Selected important features based on coeeficient values 
-  6. Making prediction using final model
-      - Final model applied on test dataset
-  7. Final Model Building
-      - Final logistic regression model is created based on selected features. This gives 0.0960 as Kaggel score 
+  6. Final Model Building
+      - Final logistic regression model is created based on selected features and apploed on test data set. This gives 0.0960 as Kaggel score 
   8. Summary
       - The customers who satisfies one or more criteria mentioned below, have higher probability of churn:
         - have done lower amount of recharge compared to previous months
