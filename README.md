@@ -75,7 +75,7 @@ To build predictive models to identify customers at high risk of churn so that t
 
 
 ## Technologies Used
-- Python 3.0 (Python lib used - numpy, pandas, seaborn, matplotlib, sklearn, statsmodels)
+- Python 3.0 and different in-built packages
 - Jupyter notebook
 - Exploratory Data Anlysis (EDA) Concept
 - Logistic regression, Random Forest, XGBoost, PCA Concept
